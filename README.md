@@ -50,12 +50,12 @@ Una experiencia narrativa interactiva tipo RPG retro con:
    - Aventura: `https://itzanxigod.github.io/menina/para%20menina.html`
 
 ### Opción 2: Localmente
-1. Descarga los archivos HTML
+1. Descarga los archivos HTML y Libs (.js)
 2. Abre cualquiera de ellos en tu navegador (Chrome, Firefox, Edge, Safari)
 3. ¡Disfruta!
 
 IMPORTANTE: Para ambas opciones debe descargar los archivos .js
-que se encuentran en el mismo repositorio, gracias<3
+que se encuentran en el mismo repositorio (Libs). gracias<3
 ---
 
 ## 🛠️ Tecnologías Utilizadas
