@@ -52,7 +52,7 @@ renderer.outputEncoding = THREE.sRGBEncoding;
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 2000);
-const controls = new THREE.OrbitControls(camera, renderer.domElement);
+const controls = new window.OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true; controls.dampingFactor = 0.06;
 controls.enableZoom = true; controls.enableRotate = true; controls.enablePan = true;
 controls.zoomSpeed = 0.9; controls.rotateSpeed = 0.8; controls.panSpeed = 0.7;
@@ -148,7 +148,7 @@ scene.add(bg);
 
 // Galaxy
 const galaxy = new THREE.Group(); scene.add(galaxy);
-const phrases = ["Pinchecha ✨", " Hermosa 💛", "Mi Bebe", "Mi Cielito 🌌", "Hermosota ✨", "Mi Infinita ♾️", "Mi Todo", "Me Encantas 🥰", " Perla 💫", "Te Amo💛", "Mi Canción Favorita", "Princesa 👑", "Mi Vida", "Eres Todo para Mi", "Hermosa Sonrisa ✨", "Te Quiero Demasiado"];
+const phrases = ["Pinchecha ✨", " Hermosa 💛", "Mi Bebe", "Mi Cielito 🌌", "Hermosota ✨", "Mi Infinita ♾️", "Mi Todo", "Me Encantas 🥰", " Perla 💫", "Te Amo💛", "Mi Canción Favorita 🎶", "Mi Persona Favorita", "Mi Diosa 🌟", "Te Quiero Mucho", "Eres Lo Mejor", "Mi Corazón 💖", "Te Adoro"];
 const phraseCount = Math.max(phrases.length * 6, 180);
 const arms = 5, radius = 82, maxH = 22;
 
@@ -203,7 +203,7 @@ function makeHaloTexture(size=1024, inner=0.45){
   grd.addColorStop(1,'rgba(0,0,0,0)');
   g.fillStyle=grd; g.fillRect(0,0,size,size); const tex=new THREE.CanvasTexture(c); tex.needsUpdate=true; return tex;
 }
-const haloPlane=new THREE.Mesh(new THREE.PlaneGeometry(320,320), new THREE.MeshBasicMaterial({ map:makeHaloTexture(1024,0.45), transparent:true, depthWrite:false, blending:THREE.AdditiveBlending, opacity:0.75 }));
+const haloPlane=new THREE.Mesh(new THREE.PlaneGeometry(320,320), new THREE.MeshBasicMaterial({ map:makeHaloTexture(1024,0.45), transparent:true, depthWrite:false, blending:THREE.AdditiveBlending, opacity:0.6 }));
 haloPlane.rotation.x=-Math.PI/2; haloPlane.renderOrder=0.2; scene.add(haloPlane);
 
 // Subtle twinkle (animate bg texture offset)
