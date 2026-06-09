@@ -54,6 +54,8 @@ Una experiencia narrativa interactiva tipo RPG retro con:
 2. Abre cualquiera de ellos en tu navegador (Chrome, Firefox, Edge, Safari)
 3. ¡Disfruta!
 
+IMPORTANTE: Para ambas opciones debe descargar los archivos .js
+que se encuentran en el mismo repositorio, gracias<3
 ---
 
 ## 🛠️ Tecnologías Utilizadas
@@ -114,7 +116,7 @@ Estos proyectos fueron creados como regalos especiales, combinando:
 ## 🎁 Créditos
 
 **De**: ItzAnxiGOD (Anxi) 💪  
-**Para**: Menina 💛  
+**Para**: Menina (Esmeralda)  
 **Con**: Todo el amor del mundo ♾️  
 
 ---
